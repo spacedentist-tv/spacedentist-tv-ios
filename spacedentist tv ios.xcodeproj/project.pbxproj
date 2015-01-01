@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		258F39E81A55824400ED7D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39E71A55824400ED7D38 /* AppDelegate.swift */; };
+		258F39EA1A55824400ED7D38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39E91A55824400ED7D38 /* ViewController.swift */; };
+		258F39ED1A55824400ED7D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258F39EB1A55824400ED7D38 /* Main.storyboard */; };
+		258F39EF1A55824400ED7D38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 258F39EE1A55824400ED7D38 /* Images.xcassets */; };
+		258F39F21A55824400ED7D38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258F39F01A55824400ED7D38 /* LaunchScreen.xib */; };
+		258F39FE1A55824500ED7D38 /* spacedentist_tv_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39FD1A55824500ED7D38 /* spacedentist_tv_iosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		258F39F81A55824500ED7D38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 258F39DA1A55824400ED7D38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 258F39E11A55824400ED7D38;
+			remoteInfo = "spacedentist tv ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		258F39E21A55824400ED7D38 /* spacedentist tv ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spacedentist tv ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		258F39E61A55824400ED7D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		258F39E71A55824400ED7D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		258F39E91A55824400ED7D38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		258F39EC1A55824400ED7D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		258F39EE1A55824400ED7D38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		258F39F11A55824400ED7D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		258F39F71A55824500ED7D38 /* spacedentist tv iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spacedentist tv iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		258F39FC1A55824500ED7D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		258F39FD1A55824500ED7D38 /* spacedentist_tv_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacedentist_tv_iosTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		258F39DF1A55824400ED7D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258F39F41A55824500ED7D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		258F39D91A55824400ED7D38 = {
+			isa = PBXGroup;
+			children = (
+				258F39E41A55824400ED7D38 /* spacedentist tv ios */,
+				258F39FA1A55824500ED7D38 /* spacedentist tv iosTests */,
+				258F39E31A55824400ED7D38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		258F39E31A55824400ED7D38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				258F39E21A55824400ED7D38 /* spacedentist tv ios.app */,
+				258F39F71A55824500ED7D38 /* spacedentist tv iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		258F39E41A55824400ED7D38 /* spacedentist tv ios */ = {
+			isa = PBXGroup;
+			children = (
+				258F39E71A55824400ED7D38 /* AppDelegate.swift */,
+				258F39E91A55824400ED7D38 /* ViewController.swift */,
+				258F39EB1A55824400ED7D38 /* Main.storyboard */,
+				258F39EE1A55824400ED7D38 /* Images.xcassets */,
+				258F39F01A55824400ED7D38 /* LaunchScreen.xib */,
+				258F39E51A55824400ED7D38 /* Supporting Files */,
+			);
+			path = "spacedentist tv ios";
+			sourceTree = "<group>";
+		};
+		258F39E51A55824400ED7D38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				258F39E61A55824400ED7D38 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		258F39FA1A55824500ED7D38 /* spacedentist tv iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				258F39FD1A55824500ED7D38 /* spacedentist_tv_iosTests.swift */,
+				258F39FB1A55824500ED7D38 /* Supporting Files */,
+			);
+			path = "spacedentist tv iosTests";
+			sourceTree = "<group>";
+		};
+		258F39FB1A55824500ED7D38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				258F39FC1A55824500ED7D38 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		258F39E11A55824400ED7D38 /* spacedentist tv ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 258F3A011A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist tv ios" */;
+			buildPhases = (
+				258F39DE1A55824400ED7D38 /* Sources */,
+				258F39DF1A55824400ED7D38 /* Frameworks */,
+				258F39E01A55824400ED7D38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "spacedentist tv ios";
+			productName = "spacedentist tv ios";
+			productReference = 258F39E21A55824400ED7D38 /* spacedentist tv ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		258F39F61A55824500ED7D38 /* spacedentist tv iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 258F3A041A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist tv iosTests" */;
+			buildPhases = (
+				258F39F31A55824500ED7D38 /* Sources */,
+				258F39F41A55824500ED7D38 /* Frameworks */,
+				258F39F51A55824500ED7D38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				258F39F91A55824500ED7D38 /* PBXTargetDependency */,
+			);
+			name = "spacedentist tv iosTests";
+			productName = "spacedentist tv iosTests";
+			productReference = 258F39F71A55824500ED7D38 /* spacedentist tv iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		258F39DA1A55824400ED7D38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Michael Coffey";
+				TargetAttributes = {
+					258F39E11A55824400ED7D38 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					258F39F61A55824500ED7D38 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 258F39E11A55824400ED7D38;
+					};
+				};
+			};
+			buildConfigurationList = 258F39DD1A55824400ED7D38 /* Build configuration list for PBXProject "spacedentist tv ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 258F39D91A55824400ED7D38;
+			productRefGroup = 258F39E31A55824400ED7D38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				258F39E11A55824400ED7D38 /* spacedentist tv ios */,
+				258F39F61A55824500ED7D38 /* spacedentist tv iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		258F39E01A55824400ED7D38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258F39ED1A55824400ED7D38 /* Main.storyboard in Resources */,
+				258F39F21A55824400ED7D38 /* LaunchScreen.xib in Resources */,
+				258F39EF1A55824400ED7D38 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258F39F51A55824500ED7D38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		258F39DE1A55824400ED7D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258F39EA1A55824400ED7D38 /* ViewController.swift in Sources */,
+				258F39E81A55824400ED7D38 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258F39F31A55824500ED7D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258F39FE1A55824500ED7D38 /* spacedentist_tv_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		258F39F91A55824500ED7D38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 258F39E11A55824400ED7D38 /* spacedentist tv ios */;
+			targetProxy = 258F39F81A55824500ED7D38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		258F39EB1A55824400ED7D38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				258F39EC1A55824400ED7D38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		258F39F01A55824400ED7D38 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				258F39F11A55824400ED7D38 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		258F39FF1A55824500ED7D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		258F3A001A55824500ED7D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		258F3A021A55824500ED7D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "spacedentist tv ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		258F3A031A55824500ED7D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "spacedentist tv ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		258F3A051A55824500ED7D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "spacedentist tv iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacedentist tv ios.app/spacedentist tv ios";
+			};
+			name = Debug;
+		};
+		258F3A061A55824500ED7D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "spacedentist tv iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacedentist tv ios.app/spacedentist tv ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		258F39DD1A55824400ED7D38 /* Build configuration list for PBXProject "spacedentist tv ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				258F39FF1A55824500ED7D38 /* Debug */,
+				258F3A001A55824500ED7D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		258F3A011A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist tv ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				258F3A021A55824500ED7D38 /* Debug */,
+				258F3A031A55824500ED7D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		258F3A041A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist tv iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				258F3A051A55824500ED7D38 /* Debug */,
+				258F3A061A55824500ED7D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 258F39DA1A55824400ED7D38 /* Project object */;
+}
