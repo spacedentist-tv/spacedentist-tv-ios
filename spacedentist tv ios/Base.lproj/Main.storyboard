@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tpc-MS-Md9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="qQF-i6-Tge">
+            <objects>
+                <navigationController id="tpc-MS-Md9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hzr-7v-BWW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sAo-2R-Q3f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLa-Qv-6D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614" y="198"/>
+        </scene>
+        <!--spacedentist-tv-ios.tv-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,7 +174,15 @@
                             <constraint firstItem="lV3-Sc-hEZ" firstAttribute="leading" secondItem="sLX-YO-V8c" secondAttribute="trailing" constant="8" symbolic="YES" id="yHk-Qb-iN0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="spacedentist-tv-ios.tv" id="LZE-OU-yRF">
+                        <barButtonItem key="rightBarButtonItem" image="CastOff" id="j73-FF-vPZ">
+                            <connections>
+                                <action selector="castButtonPressed:" destination="BYZ-38-t0r" id="opo-E5-BWB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="buttonCast" destination="j73-FF-vPZ" id="SLf-Wg-bpM"/>
                         <outlet property="buttonEight" destination="sLX-YO-V8c" id="XvC-7I-rin"/>
                         <outlet property="buttonFive" destination="Yj9-VK-Qwd" id="CKz-pu-7QI"/>
                         <outlet property="buttonFour" destination="h0X-LJ-CY6" id="DkK-bF-9YM"/>
@@ -174,6 +198,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="165" y="193"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CastOff" width="29" height="22"/>
+    </resources>
 </document>

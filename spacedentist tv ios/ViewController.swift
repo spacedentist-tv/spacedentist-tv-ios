@@ -20,6 +20,8 @@ class ViewController: UIViewController,
     var deviceManager: GCKDeviceManager? = nil
     var castChannel: GCKCastChannel? = nil
     
+    @IBOutlet var buttonCast: UIBarButtonItem?
+    
     @IBOutlet var buttonOne: UIButton?
     @IBOutlet var buttonTwo: UIButton?
     @IBOutlet var buttonThree: UIButton?
@@ -36,6 +38,9 @@ class ViewController: UIViewController,
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // hide the cast icon
+        checkEnableCastButton(animated: false)
+        
         self.deviceScanner = GCKDeviceScanner()
         self.filterCriteria = GCKFilterCriteria(forAvailableApplicationWithID: self.applicationId)
         self.deviceScanner?.filterCriteria = filterCriteria
@@ -47,10 +52,41 @@ class ViewController: UIViewController,
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func checkEnableCastButton(animated: Bool = true) {
+        let item = (deviceScanner?.devices.count > 0) ? self.buttonCast : nil
+        
+        self.navigationItem.setRightBarButtonItem(item, animated: animated)
+    }
 
     func deviceDidComeOnline(device: GCKDevice!) {
-        NSLog("Device found!")
-        
+        checkEnableCastButton()
+    }
+    
+    func deviceDidGoOffline(device: GCKDevice!) {
+        checkEnableCastButton()
+    }
+    
+    @IBAction func castButtonPressed(button: AnyObject) {
+        if let dm = self.deviceManager {
+            if  dm.isConnected {
+                NSLog("there's a device manager and it's connected!")
+                dm.stopApplication()
+                dm.disconnect()
+                if let bc = self.buttonCast? {
+                    bc.image = UIImage(named: "CastOff")
+                }
+            } else {
+                // there was a device manager, but it wasn't connected
+                showCastSheet()
+            }
+        } else {
+            // there's no device manager
+            showCastSheet()
+        }
+    }
+
+    func showCastSheet() {
         let sheet = UIActionSheet(title: "Cast", delegate: self,
             cancelButtonTitle: nil,
             destructiveButtonTitle: nil)
@@ -65,23 +101,25 @@ class ViewController: UIViewController,
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
         connect(self.deviceScanner?.devices[buttonIndex] as GCKDevice)
     }
-
-    func deviceDidGoOffline(device: GCKDevice!) {
-        NSLog("Device disappeared!")
-    }
     
     func connect(device: GCKDevice) {
         self.deviceManager = GCKDeviceManager(device: device, clientPackageName: "")
         
         self.deviceManager?.delegate = self
         self.deviceManager?.connect()
+        
+        self.buttonCast?.image = UIImage.animatedImageNamed("CastOn", duration:1)
     }
     
     func deviceManagerDidConnect(deviceManager: GCKDeviceManager!) {
+        // launch the application to start casting
         self.deviceManager?.launchApplication(self.applicationId)
     }
     
     func deviceManager(deviceManager: GCKDeviceManager!, didConnectToCastApplication applicationMetadata: GCKApplicationMetadata!, sessionID: String!, launchedApplication: Bool) {
+        // the app has launched to turn the cast icon on
+        self.buttonCast?.image = UIImage(named: "CastOn")
+        
         self.castChannel = SDCastChannel()
         self.deviceManager?.addChannel(self.castChannel)
     }

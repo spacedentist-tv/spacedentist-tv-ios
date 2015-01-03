@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "258F39E11A55824400ED7D38"
-               BuildableName = "spacedentist tv ios.app"
-               BlueprintName = "spacedentist tv ios"
-               ReferencedContainer = "container:spacedentist tv ios.xcodeproj">
+               BuildableName = "Spacedentist.app"
+               BlueprintName = "Spacedentist"
+               ReferencedContainer = "container:Spacedentist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "258F39F61A55824500ED7D38"
-               BuildableName = "spacedentist tv iosTests.xctest"
-               BlueprintName = "spacedentist tv iosTests"
-               ReferencedContainer = "container:spacedentist tv ios.xcodeproj">
+               BuildableName = "SpacedentistTests.xctest"
+               BlueprintName = "SpacedentistTests"
+               ReferencedContainer = "container:Spacedentist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "258F39F61A55824500ED7D38"
-               BuildableName = "spacedentist tv iosTests.xctest"
-               BlueprintName = "spacedentist tv iosTests"
-               ReferencedContainer = "container:spacedentist tv ios.xcodeproj">
+               BuildableName = "SpacedentistTests.xctest"
+               BlueprintName = "SpacedentistTests"
+               ReferencedContainer = "container:Spacedentist.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "258F39E11A55824400ED7D38"
-            BuildableName = "spacedentist tv ios.app"
-            BlueprintName = "spacedentist tv ios"
-            ReferencedContainer = "container:spacedentist tv ios.xcodeproj">
+            BuildableName = "Spacedentist.app"
+            BlueprintName = "Spacedentist"
+            ReferencedContainer = "container:Spacedentist.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "258F39E11A55824400ED7D38"
-            BuildableName = "spacedentist tv ios.app"
-            BlueprintName = "spacedentist tv ios"
-            ReferencedContainer = "container:spacedentist tv ios.xcodeproj">
+            BuildableName = "Spacedentist.app"
+            BlueprintName = "Spacedentist"
+            ReferencedContainer = "container:Spacedentist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "258F39E11A55824400ED7D38"
-            BuildableName = "spacedentist tv ios.app"
-            BlueprintName = "spacedentist tv ios"
-            ReferencedContainer = "container:spacedentist tv ios.xcodeproj">
+            BuildableName = "Spacedentist.app"
+            BlueprintName = "Spacedentist"
+            ReferencedContainer = "container:Spacedentist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
