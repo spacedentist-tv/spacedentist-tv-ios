@@ -1,17 +1,19 @@
 //
-//  ViewController.swift
-//  spacedentist tv ios
+//  SDTabBarController.swift
+//  spacedentist-tv-ios
 //
-//  Created by Michael Coffey on 01/01/2015.
+//  Created by Michael Coffey on 04/01/2015.
 //  Copyright (c) 2015 Michael Coffey. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController,
-                        GCKDeviceScannerListener,
-                        GCKDeviceManagerDelegate,
-                        UIActionSheetDelegate {
+class SDTabBarConroller : UITabBarController,
+    GCKDeviceScannerListener,
+    GCKDeviceManagerDelegate,
+    SDConnectSheetDelegate,
+    SDDisconnectSheetDelegate,
+    SDConnectedControllerDelegate {
     
     let applicationId: String = "E7EFD798"
     
@@ -20,23 +22,24 @@ class ViewController: UIViewController,
     var deviceManager: GCKDeviceManager? = nil
     var castChannel: GCKCastChannel? = nil
     
+    var connectSheet: SDConnectSheet? = nil
+    var disconnectSheet: SDDisconnectSheet? = nil
+    
     @IBOutlet var buttonCast: UIBarButtonItem?
     
-    @IBOutlet var buttonOne: UIButton?
-    @IBOutlet var buttonTwo: UIButton?
-    @IBOutlet var buttonThree: UIButton?
-    @IBOutlet var buttonFour: UIButton?
-    @IBOutlet var buttonFive: UIButton?
-    @IBOutlet var buttonSix: UIButton?
-    @IBOutlet var buttonSeven: UIButton?
-    @IBOutlet var buttonEight: UIButton?
-    @IBOutlet var buttonNine: UIButton?
-    @IBOutlet var buttonZero: UIButton?
-    @IBOutlet var buttonText: UIButton?
-
+    var buttonMap = [UIButton: String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if let viewControllers = self.viewControllers? {
+            for viewController in viewControllers {
+                if let connectedController = viewController as? SDConnectedController {
+                    connectedController.delegate = self
+                }
+            }
+        }
         
         // hide the cast icon
         checkEnableCastButton(animated: false)
@@ -47,7 +50,7 @@ class ViewController: UIViewController,
         self.deviceScanner?.addListener(self)
         self.deviceScanner?.startScan()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,7 +61,7 @@ class ViewController: UIViewController,
         
         self.navigationItem.setRightBarButtonItem(item, animated: animated)
     }
-
+    
     func deviceDidComeOnline(device: GCKDevice!) {
         checkEnableCastButton()
     }
@@ -71,44 +74,38 @@ class ViewController: UIViewController,
         if let dm = self.deviceManager {
             if  dm.isConnected {
                 NSLog("there's a device manager and it's connected!")
-                dm.stopApplication()
-                dm.disconnect()
-                if let bc = self.buttonCast? {
-                    bc.image = UIImage(named: "CastOff")
-                }
+                self.disconnectSheet = SDDisconnectSheet(deviceName: dm.device.friendlyName, delegate: self)
+                self.disconnectSheet?.sheet.showFromBarButtonItem(self.buttonCast, animated: true)
             } else {
                 // there was a device manager, but it wasn't connected
-                showCastSheet()
+                self.connectSheet = SDConnectSheet(deviceScanner: self.deviceScanner!, delegate: self)
+                self.connectSheet?.sheet?.showFromBarButtonItem(self.buttonCast, animated: true)
             }
         } else {
             // there's no device manager
-            showCastSheet()
+            self.connectSheet = SDConnectSheet(deviceScanner: self.deviceScanner!, delegate: self)
+            self.connectSheet?.sheet?.showFromBarButtonItem(self.buttonCast, animated: true)
         }
     }
-
-    func showCastSheet() {
-        let sheet = UIActionSheet(title: "Cast", delegate: self,
-            cancelButtonTitle: nil,
-            destructiveButtonTitle: nil)
-        
-        for device in self.deviceScanner?.devices as [GCKDevice] {
-            sheet.addButtonWithTitle(device.friendlyName)
-        }
-        
-        sheet.showInView(self.view)
-    }
     
-    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
-        connect(self.deviceScanner?.devices[buttonIndex] as GCKDevice)
-    }
-    
-    func connect(device: GCKDevice) {
+    func deviceSelected(device: GCKDevice) {
+        NSLog("device selected \(device.friendlyName)")
+        
         self.deviceManager = GCKDeviceManager(device: device, clientPackageName: "")
         
         self.deviceManager?.delegate = self
         self.deviceManager?.connect()
         
+        // animate the cast icon while connecting
         self.buttonCast?.image = UIImage.animatedImageNamed("CastOn", duration:1)
+    }
+    
+    func disconnectPressed() {
+        NSLog("disconnect pressed")
+        
+        self.deviceManager?.stopApplication()
+        self.deviceManager?.disconnect()
+        castOff()
     }
     
     func deviceManagerDidConnect(deviceManager: GCKDeviceManager!) {
@@ -118,49 +115,31 @@ class ViewController: UIViewController,
     
     func deviceManager(deviceManager: GCKDeviceManager!, didConnectToCastApplication applicationMetadata: GCKApplicationMetadata!, sessionID: String!, launchedApplication: Bool) {
         // the app has launched to turn the cast icon on
-        self.buttonCast?.image = UIImage(named: "CastOn")
+        castOn()
         
         self.castChannel = SDCastChannel()
         self.deviceManager?.addChannel(self.castChannel)
     }
     
-    func getKey(button: UIButton) -> String {
-        if button == self.buttonOne {
-            return "1"
-        } else if button == self.buttonTwo {
-            return "2"
-        } else if button == self.buttonThree {
-            return "3"
-        } else if button == self.buttonFour {
-            return "4"
-        } else if button == self.buttonFive {
-            return "5"
-        } else if button == self.buttonSix {
-            return "6"
-        } else if button == self.buttonSeven {
-            return "7"
-        } else if button == self.buttonEight {
-            return "8"
-        } else if button == self.buttonNine {
-            return "9"
-        } else if button == self.buttonZero {
-            return "0"
-        } else if button == self.buttonText {
-            return "cycle"
-        }
-        
-        return "";
+    func deviceManager(deviceManager: GCKDeviceManager!, didDisconnectFromApplicationWithError error: NSError!) {
+        castOff()
     }
     
-    @IBAction func buttonTapped(button: UIButton) {
-        NSLog("button tapped!")
-        
+    func castOn() {
+        self.buttonCast?.image = UIImage(named: "CastOn")
+        self.selectedIndex = 1
+    }
+    
+    func castOff() {
+        self.buttonCast?.image = UIImage(named: "CastOff")
+        self.selectedIndex = 0
+    }
+    
+    // SDConnectedControllerDelegate
+    func buttonPressed(key: String) {
         if let cc = self.castChannel? {
             let dictionary: NSMutableDictionary = NSMutableDictionary()
             dictionary.setValue("rc", forKey: "sdtv_msg")
-            let key = getKey(button)
-            NSLog("key: %@", key)
-            
             dictionary.setValue(key, forKey: "key")
             
             var error: NSErrorPointer = nil
@@ -171,4 +150,3 @@ class ViewController: UIViewController,
         }
     }
 }
-

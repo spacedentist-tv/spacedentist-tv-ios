@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tpc-MS-Md9">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BebasNeue.ttf">
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="qQF-i6-Tge">
@@ -13,17 +31,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sAo-2R-Q3f"/>
+                        <segue destination="QuG-8r-PUD" kind="relationship" relationship="rootViewController" id="HrC-yJ-Kpt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLa-Qv-6D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-614" y="198"/>
         </scene>
-        <!--spacedentist-tv-ios.tv-->
+        <!--Connected-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SDConnectedController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,7 +51,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lz-HA-Wwp">
-                                <rect key="frame" x="236" y="562" width="37" height="30"/>
+                                <rect key="frame" x="153.5" y="471" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="TEXT">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,7 +61,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-5W-hv1">
-                                <rect key="frame" x="236" y="524" width="37" height="30"/>
+                                <rect key="frame" x="153.5" y="391" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="7">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -51,7 +71,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0X-LJ-CY6">
-                                <rect key="frame" x="236" y="486" width="37" height="30"/>
+                                <rect key="frame" x="153.5" y="311" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -60,7 +81,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZr-YC-0ud">
-                                <rect key="frame" x="236" y="448" width="37" height="30"/>
+                                <rect key="frame" x="153" y="231" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -69,7 +91,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-Sc-hEZ">
-                                <rect key="frame" x="326" y="524" width="37" height="30"/>
+                                <rect key="frame" x="353.5" y="391" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="9">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -78,7 +101,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-14-oLg">
-                                <rect key="frame" x="326" y="486" width="37" height="30"/>
+                                <rect key="frame" x="353.5" y="311" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="6">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -87,7 +111,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-cj-rcn">
-                                <rect key="frame" x="281" y="562" width="37" height="30"/>
+                                <rect key="frame" x="253.5" y="471" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="0">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -96,7 +121,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLX-YO-V8c">
-                                <rect key="frame" x="281" y="524" width="37" height="30"/>
+                                <rect key="frame" x="253.5" y="391" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="8">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -105,7 +131,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj9-VK-Qwd">
-                                <rect key="frame" x="281" y="486" width="37" height="30"/>
+                                <rect key="frame" x="253.5" y="311" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="5">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -114,7 +141,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-Uc-vk4">
-                                <rect key="frame" x="281" y="448" width="37" height="30"/>
+                                <rect key="frame" x="253.5" y="231" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -123,7 +151,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKB-Mu-qrD">
-                                <rect key="frame" x="326" y="448" width="37" height="30"/>
+                                <rect key="frame" x="353.5" y="231" width="92" height="72"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="60"/>
                                 <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -174,15 +203,9 @@
                             <constraint firstItem="lV3-Sc-hEZ" firstAttribute="leading" secondItem="sLX-YO-V8c" secondAttribute="trailing" constant="8" symbolic="YES" id="yHk-Qb-iN0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="spacedentist-tv-ios.tv" id="LZE-OU-yRF">
-                        <barButtonItem key="rightBarButtonItem" image="CastOff" id="j73-FF-vPZ">
-                            <connections>
-                                <action selector="castButtonPressed:" destination="BYZ-38-t0r" id="opo-E5-BWB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Connected" id="QWE-7H-v2l"/>
+                    <navigationItem key="navigationItem" id="LZE-OU-yRF"/>
                     <connections>
-                        <outlet property="buttonCast" destination="j73-FF-vPZ" id="SLf-Wg-bpM"/>
                         <outlet property="buttonEight" destination="sLX-YO-V8c" id="XvC-7I-rin"/>
                         <outlet property="buttonFive" destination="Yj9-VK-Qwd" id="CKz-pu-7QI"/>
                         <outlet property="buttonFour" destination="h0X-LJ-CY6" id="DkK-bF-9YM"/>
@@ -198,7 +221,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165" y="193"/>
+            <point key="canvasLocation" x="950" y="-51"/>
+        </scene>
+        <!--Disconnected-->
+        <scene sceneID="CaT-Vj-aDM">
+            <objects>
+                <viewController id="iPY-ha-CPs" customClass="SDDisconnectedController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eYE-MK-Ulv"/>
+                        <viewControllerLayoutGuide type="bottom" id="6kb-lB-O1C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tV3-tk-Y03">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose a Chromecast to start spacedentist.tv." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-dS-VvM">
+                                <rect key="frame" x="46.5" y="252" width="507.5" height="96"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="5rA-dS-VvM" secondAttribute="centerY" id="8Dd-3k-82y"/>
+                            <constraint firstItem="5rA-dS-VvM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tV3-tk-Y03" secondAttribute="leadingMargin" constant="8" id="OAG-RD-jn2"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5rA-dS-VvM" secondAttribute="trailing" constant="8" id="mLG-hd-ogW"/>
+                            <constraint firstAttribute="centerX" secondItem="5rA-dS-VvM" secondAttribute="centerX" id="qv5-be-U7w"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Disconnected" id="Dhc-e6-sXN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WqK-sJ-fvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="624"/>
+        </scene>
+        <!--spacedentist.tv-->
+        <scene sceneID="fbf-29-lWu">
+            <objects>
+                <tabBarController id="QuG-8r-PUD" customClass="SDTabBarConroller" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="spacedentist.tv" id="aL1-l4-FZI">
+                        <barButtonItem key="rightBarButtonItem" image="CastOff" id="j73-FF-vPZ">
+                            <connections>
+                                <action selector="castButtonPressed:" destination="QuG-8r-PUD" id="52c-5x-N8M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" id="jVZ-En-kBf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="buttonCast" destination="j73-FF-vPZ" id="Nn1-fA-12q"/>
+                        <segue destination="iPY-ha-CPs" kind="relationship" relationship="viewControllers" id="Ot0-tZ-js8"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tzo-fT-5dl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEQ-za-KXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="198"/>
         </scene>
     </scenes>
     <resources>
