@@ -91,7 +91,7 @@ class SDTabBarConroller : UITabBarController,
     func deviceSelected(device: GCKDevice) {
         NSLog("device selected \(device.friendlyName)")
         
-        self.deviceManager = GCKDeviceManager(device: device, clientPackageName: "")
+        self.deviceManager = GCKDeviceManager(device: device, clientPackageName: NSBundle.mainBundle().bundleIdentifier)
         
         self.deviceManager?.delegate = self
         self.deviceManager?.connect()
