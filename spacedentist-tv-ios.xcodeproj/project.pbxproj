@@ -11,7 +11,6 @@
 		258F39EA1A55824400ED7D38 /* SDConnectedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39E91A55824400ED7D38 /* SDConnectedController.swift */; };
 		258F39ED1A55824400ED7D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258F39EB1A55824400ED7D38 /* Main.storyboard */; };
 		258F39EF1A55824400ED7D38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 258F39EE1A55824400ED7D38 /* Images.xcassets */; };
-		258F39F21A55824400ED7D38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258F39F01A55824400ED7D38 /* LaunchScreen.xib */; };
 		258F39FE1A55824500ED7D38 /* spacedentist_tv_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39FD1A55824500ED7D38 /* spacedentist_tv_iosTests.swift */; };
 		258F3A091A55B0FE00ED7D38 /* SDCastChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F3A081A55B0FE00ED7D38 /* SDCastChannel.swift */; };
 		25D377C41A58751B00BE337C /* BebasNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D377C31A58751B00BE337C /* BebasNeue.ttf */; };
@@ -19,6 +18,7 @@
 		25D377C91A58A22400BE337C /* SDDisconnectSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D377C81A58A22400BE337C /* SDDisconnectSheet.swift */; };
 		25D377CB1A5952EA00BE337C /* SDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D377CA1A5952EA00BE337C /* SDTabBarController.swift */; };
 		25D377CD1A59572700BE337C /* SDDisconnectedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D377CC1A59572700BE337C /* SDDisconnectedController.swift */; };
+		25D377D01A59F1F100BE337C /* UIImageViewAligned.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D377CF1A59F1F100BE337C /* UIImageViewAligned.m */; };
 		6CA3194F15E33B6535D3178C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DEBDDEFCA20ECEA988625B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,6 @@
 		258F39E91A55824400ED7D38 /* SDConnectedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDConnectedController.swift; sourceTree = "<group>"; };
 		258F39EC1A55824400ED7D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		258F39EE1A55824400ED7D38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		258F39F11A55824400ED7D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		258F39F71A55824500ED7D38 /* spacedentist-tv-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spacedentist-tv-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		258F39FC1A55824500ED7D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		258F39FD1A55824500ED7D38 /* spacedentist_tv_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacedentist_tv_iosTests.swift; sourceTree = "<group>"; };
@@ -50,6 +49,8 @@
 		25D377C81A58A22400BE337C /* SDDisconnectSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDisconnectSheet.swift; sourceTree = "<group>"; };
 		25D377CA1A5952EA00BE337C /* SDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTabBarController.swift; sourceTree = "<group>"; };
 		25D377CC1A59572700BE337C /* SDDisconnectedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDisconnectedController.swift; sourceTree = "<group>"; };
+		25D377CE1A59F1F100BE337C /* UIImageViewAligned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageViewAligned.h; path = ImageAligned/UIImageViewAligned.h; sourceTree = "<group>"; };
+		25D377CF1A59F1F100BE337C /* UIImageViewAligned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageViewAligned.m; path = ImageAligned/UIImageViewAligned.m; sourceTree = "<group>"; };
 		868E545D8D51406184CD159A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8775A9FA26CC43B37017D456 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E3DEBDDEFCA20ECEA988625B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +98,8 @@
 		258F39E41A55824400ED7D38 /* spacedentist-tv-ios */ = {
 			isa = PBXGroup;
 			children = (
+				25D377CE1A59F1F100BE337C /* UIImageViewAligned.h */,
+				25D377CF1A59F1F100BE337C /* UIImageViewAligned.m */,
 				258F39E71A55824400ED7D38 /* AppDelegate.swift */,
 				25D377CA1A5952EA00BE337C /* SDTabBarController.swift */,
 				258F39E91A55824400ED7D38 /* SDConnectedController.swift */,
@@ -106,7 +109,6 @@
 				258F3A081A55B0FE00ED7D38 /* SDCastChannel.swift */,
 				258F39EB1A55824400ED7D38 /* Main.storyboard */,
 				258F39EE1A55824400ED7D38 /* Images.xcassets */,
-				258F39F01A55824400ED7D38 /* LaunchScreen.xib */,
 				258F3A071A55850200ED7D38 /* Bridging.h */,
 				258F39E51A55824400ED7D38 /* Supporting Files */,
 			);
@@ -239,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				258F39ED1A55824400ED7D38 /* Main.storyboard in Resources */,
-				258F39F21A55824400ED7D38 /* LaunchScreen.xib in Resources */,
 				258F39EF1A55824400ED7D38 /* Images.xcassets in Resources */,
 				25D377C41A58751B00BE337C /* BebasNeue.ttf in Resources */,
 			);
@@ -299,6 +300,7 @@
 				25D377C71A58A0AE00BE337C /* SDConnectSheet.swift in Sources */,
 				258F3A091A55B0FE00ED7D38 /* SDCastChannel.swift in Sources */,
 				258F39E81A55824400ED7D38 /* AppDelegate.swift in Sources */,
+				25D377D01A59F1F100BE337C /* UIImageViewAligned.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,14 +329,6 @@
 				258F39EC1A55824400ED7D38 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		258F39F01A55824400ED7D38 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				258F39F11A55824400ED7D38 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,6 +418,7 @@
 			baseConfigurationReference = 868E545D8D51406184CD159A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "spacedentist-tv-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "spacedentist-tv-ios";
@@ -436,6 +431,7 @@
 			baseConfigurationReference = 8775A9FA26CC43B37017D456 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "spacedentist-tv-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "spacedentist-tv-ios";
