@@ -17,6 +17,9 @@ class SDTabBarConroller : UITabBarController,
     
     let applicationId: String = "E7EFD798"
     
+    var connectedControler: SDConnectedController? = nil
+    var disconnectedController: SDDisconnectedController? = nil
+    
     var deviceScanner: GCKDeviceScanner? = nil
     var filterCriteria: GCKFilterCriteria? = nil
     var deviceManager: GCKDeviceManager? = nil
@@ -33,12 +36,12 @@ class SDTabBarConroller : UITabBarController,
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if let viewControllers = self.viewControllers? {
-            for viewController in viewControllers {
-                if let connectedController = viewController as? SDConnectedController {
-                    connectedController.delegate = self
-                }
-            }
+        if let connectedController = self.viewControllers?[1] as? SDConnectedController {
+            self.connectedControler = connectedController
+            connectedController.delegate = self
+        }
+        if let disconnectedController = self.viewControllers?[0] as? SDDisconnectedController {
+            self.disconnectedController = disconnectedController
         }
         
         // hide the cast icon
@@ -57,9 +60,15 @@ class SDTabBarConroller : UITabBarController,
     }
     
     func checkEnableCastButton(animated: Bool = true) {
-        let item = (deviceScanner?.devices.count > 0) ? self.buttonCast : nil
+        var available: Bool = false
         
-        self.navigationItem.setRightBarButtonItem(item, animated: animated)
+        if let ds = self.deviceScanner {
+            available = deviceScanner!.hasDiscoveredDevices
+        }
+        
+        self.navigationItem.setRightBarButtonItem(available ? self.buttonCast : nil, animated: animated)
+        
+        self.disconnectedController?.setChromecastAvailable(available)
     }
     
     func deviceDidComeOnline(device: GCKDevice!) {
