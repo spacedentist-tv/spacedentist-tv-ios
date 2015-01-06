@@ -267,7 +267,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need a Chromecast on your network to start Spacedentist.tv" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-dS-VvM">
-                                <rect key="frame" x="30" y="252" width="539" height="96"/>
+                                <rect key="frame" x="24" y="252" width="552" height="96"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -276,10 +276,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="5rA-dS-VvM" secondAttribute="centerY" id="8Dd-3k-82y"/>
-                            <constraint firstItem="5rA-dS-VvM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tV3-tk-Y03" secondAttribute="leadingMargin" constant="8" id="OAG-RD-jn2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5rA-dS-VvM" secondAttribute="trailing" constant="8" id="M2h-UX-9bE"/>
+                            <constraint firstItem="5rA-dS-VvM" firstAttribute="leading" secondItem="tV3-tk-Y03" secondAttribute="leadingMargin" constant="8" id="OAG-RD-jn2"/>
                             <constraint firstAttribute="trailing" secondItem="qnD-Y7-rq7" secondAttribute="trailing" id="blU-xX-jHZ"/>
                             <constraint firstItem="qnD-Y7-rq7" firstAttribute="leading" secondItem="tV3-tk-Y03" secondAttribute="leading" id="dKZ-WJ-f4i"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="5rA-dS-VvM" secondAttribute="trailing" constant="8" id="mLG-hd-ogW"/>
                             <constraint firstAttribute="centerX" secondItem="5rA-dS-VvM" secondAttribute="centerX" id="qv5-be-U7w"/>
                             <constraint firstAttribute="bottomMargin" secondItem="qnD-Y7-rq7" secondAttribute="bottom" id="siC-Bm-n0f"/>
                             <constraint firstItem="qnD-Y7-rq7" firstAttribute="top" secondItem="tV3-tk-Y03" secondAttribute="topMargin" id="xPJ-0r-vby"/>
