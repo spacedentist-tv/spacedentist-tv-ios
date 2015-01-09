@@ -18,7 +18,6 @@
             <string>BebasNeue</string>
             <string>BebasNeue</string>
             <string>BebasNeue</string>
-            <string>BebasNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -60,140 +59,207 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="alignLeft" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lz-HA-Wwp">
-                                <rect key="frame" x="182" y="406" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-5W-hv1">
+                                <rect key="frame" x="172" y="338" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="cxl-Gp-WEF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
-                                <state key="normal" title="TEXT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMi-GI-bOu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-5W-hv1">
-                                <rect key="frame" x="182" y="338" width="73" height="60"/>
-                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
-                                <state key="normal" title="7">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XhT-t8-Yjk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0X-LJ-CY6">
-                                <rect key="frame" x="182" y="270" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0X-LJ-CY6">
+                                <rect key="frame" x="172" y="270" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="IiD-05-Qwv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mdq-Vr-kMt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZr-YC-0ud">
-                                <rect key="frame" x="182" y="202" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZr-YC-0ud">
+                                <rect key="frame" x="172" y="202" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="hav-NG-ckX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pw-fs-pod"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-Sc-hEZ">
-                                <rect key="frame" x="344" y="338" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-Sc-hEZ">
+                                <rect key="frame" x="348" y="338" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="tmb-y3-DGr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRE-rm-qZb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-14-oLg">
-                                <rect key="frame" x="344" y="270" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-14-oLg">
+                                <rect key="frame" x="348" y="270" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="c36-Pe-Gx9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeX-1H-IJv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-cj-rcn">
-                                <rect key="frame" x="263" y="406" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-cj-rcn">
+                                <rect key="frame" x="260" y="406" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CER-xI-s8o"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="0">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vk-wp-hed"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLX-YO-V8c">
-                                <rect key="frame" x="263" y="338" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLX-YO-V8c">
+                                <rect key="frame" x="260" y="338" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="rrd-56-JrH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tc2-bQ-8WB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj9-VK-Qwd">
-                                <rect key="frame" x="263" y="270" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj9-VK-Qwd">
+                                <rect key="frame" x="260" y="270" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="F4N-0E-0yr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9q-Dw-AtT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-Uc-vk4">
-                                <rect key="frame" x="263" y="202" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-Uc-vk4">
+                                <rect key="frame" x="260" y="202" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="NfZ-LL-4dD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uOt-fE-3hO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKB-Mu-qrD">
-                                <rect key="frame" x="344" y="202" width="73" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKB-Mu-qrD">
+                                <rect key="frame" x="348" y="202" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0UP-XQ-Nsv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qvo-nf-39a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lz-HA-Wwp">
+                                <rect key="frame" x="186" y="417" width="52" height="38"/>
+                                <state key="normal" image="Text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="TextPressed"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMi-GI-bOu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="yKB-Mu-qrD" secondAttribute="width" id="172-B1-HJ3"/>
                             <constraint firstAttribute="centerY" secondItem="Yj9-VK-Qwd" secondAttribute="centerY" id="2f2-M9-Ruq"/>
                             <constraint firstItem="w0g-14-oLg" firstAttribute="leading" secondItem="Yj9-VK-Qwd" secondAttribute="trailing" constant="8" symbolic="YES" id="7Sa-ry-4a0"/>
                             <constraint firstItem="uLl-cj-rcn" firstAttribute="top" secondItem="sLX-YO-V8c" secondAttribute="bottom" constant="8" symbolic="YES" id="7V7-Ow-DCF"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="lV3-Sc-hEZ" secondAttribute="width" id="BFy-Kw-jO4"/>
                             <constraint firstItem="IGH-fx-bnq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FJt-MD-KYK"/>
                             <constraint firstItem="w0g-14-oLg" firstAttribute="top" secondItem="yKB-Mu-qrD" secondAttribute="bottom" constant="8" symbolic="YES" id="Fxo-vt-XCV"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="h0X-LJ-CY6" secondAttribute="width" id="GRA-qm-8KB"/>
                             <constraint firstItem="lV3-Sc-hEZ" firstAttribute="top" secondItem="w0g-14-oLg" secondAttribute="bottom" constant="8" symbolic="YES" id="Jib-JS-zdQ"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="Yj9-VK-Qwd" secondAttribute="width" id="Jnl-3F-eRn"/>
+                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="centerY" secondItem="uLl-cj-rcn" secondAttribute="centerY" id="MJx-Zw-iqW"/>
                             <constraint firstAttribute="centerX" secondItem="XXv-Uc-vk4" secondAttribute="centerX" id="OKO-mf-iQ2"/>
                             <constraint firstItem="lV3-Sc-hEZ" firstAttribute="centerY" secondItem="sLX-YO-V8c" secondAttribute="centerY" id="PuZ-R9-dng"/>
                             <constraint firstItem="sLX-YO-V8c" firstAttribute="top" secondItem="Yj9-VK-Qwd" secondAttribute="bottom" constant="8" symbolic="YES" id="W6O-Kn-B7C"/>
@@ -202,32 +268,24 @@
                             <constraint firstItem="Yj9-VK-Qwd" firstAttribute="top" secondItem="XXv-Uc-vk4" secondAttribute="bottom" constant="8" symbolic="YES" id="Zfq-m3-qrd"/>
                             <constraint firstItem="h0X-LJ-CY6" firstAttribute="centerY" secondItem="w0g-14-oLg" secondAttribute="centerY" id="Zh8-j1-S7u"/>
                             <constraint firstItem="Xk3-5W-hv1" firstAttribute="top" secondItem="h0X-LJ-CY6" secondAttribute="bottom" constant="8" symbolic="YES" id="b0P-xW-q44"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="w0g-14-oLg" secondAttribute="width" id="b3p-KW-W95"/>
-                            <constraint firstItem="uLl-cj-rcn" firstAttribute="leading" secondItem="2lz-HA-Wwp" secondAttribute="trailing" constant="8" symbolic="YES" id="bMf-27-0cZ"/>
                             <constraint firstAttribute="trailing" secondItem="IGH-fx-bnq" secondAttribute="trailing" id="bWP-Pt-qCY"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="top" secondItem="Xk3-5W-hv1" secondAttribute="bottom" constant="8" symbolic="YES" id="bjj-BI-q1u"/>
                             <constraint firstItem="h0X-LJ-CY6" firstAttribute="centerY" secondItem="Yj9-VK-Qwd" secondAttribute="centerY" id="blu-Pb-lU6"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="Xk3-5W-hv1" secondAttribute="width" id="c1b-0t-xDf"/>
+                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="centerX" secondItem="Xk3-5W-hv1" secondAttribute="centerX" id="cbn-2m-lbV"/>
                             <constraint firstAttribute="centerX" secondItem="sLX-YO-V8c" secondAttribute="centerX" id="dzB-TQ-yMa"/>
                             <constraint firstAttribute="centerX" secondItem="Yj9-VK-Qwd" secondAttribute="centerX" id="eOq-Rf-IcO"/>
                             <constraint firstItem="yKB-Mu-qrD" firstAttribute="leading" secondItem="XXv-Uc-vk4" secondAttribute="trailing" constant="8" symbolic="YES" id="eef-nq-xbo"/>
                             <constraint firstItem="h0X-LJ-CY6" firstAttribute="top" secondItem="MZr-YC-0ud" secondAttribute="bottom" constant="8" symbolic="YES" id="f4K-Da-BCh"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="XXv-Uc-vk4" secondAttribute="width" id="gIn-6D-mqs"/>
                             <constraint firstItem="Yj9-VK-Qwd" firstAttribute="leading" secondItem="h0X-LJ-CY6" secondAttribute="trailing" constant="8" symbolic="YES" id="gRc-22-gfX"/>
                             <constraint firstItem="MZr-YC-0ud" firstAttribute="centerY" secondItem="XXv-Uc-vk4" secondAttribute="centerY" id="jOI-UR-fFk"/>
                             <constraint firstAttribute="bottomMargin" secondItem="IGH-fx-bnq" secondAttribute="bottom" id="jcc-Sy-E3g"/>
                             <constraint firstItem="lV3-Sc-hEZ" firstAttribute="centerY" secondItem="Xk3-5W-hv1" secondAttribute="centerY" id="ogj-O7-wQU"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="sLX-YO-V8c" secondAttribute="width" id="pgi-Kj-Cip"/>
                             <constraint firstAttribute="centerX" secondItem="uLl-cj-rcn" secondAttribute="centerX" id="rxL-Iu-CJC"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="MZr-YC-0ud" secondAttribute="width" id="s5o-Li-PfP"/>
                             <constraint firstItem="sLX-YO-V8c" firstAttribute="leading" secondItem="Xk3-5W-hv1" secondAttribute="trailing" constant="8" symbolic="YES" id="tmO-Ks-jFw"/>
-                            <constraint firstItem="uLl-cj-rcn" firstAttribute="centerY" secondItem="2lz-HA-Wwp" secondAttribute="centerY" id="u5K-Yh-Fnx"/>
-                            <constraint firstItem="2lz-HA-Wwp" firstAttribute="width" secondItem="uLl-cj-rcn" secondAttribute="width" id="w2e-XC-rbf"/>
                             <constraint firstItem="XXv-Uc-vk4" firstAttribute="leading" secondItem="MZr-YC-0ud" secondAttribute="trailing" constant="8" symbolic="YES" id="xtC-fk-v5a"/>
                             <constraint firstItem="lV3-Sc-hEZ" firstAttribute="leading" secondItem="sLX-YO-V8c" secondAttribute="trailing" constant="8" symbolic="YES" id="yHk-Qb-iN0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Connected" id="QWE-7H-v2l"/>
+                    <tabBarItem key="tabBarItem" title="Connected" image="CastOn" id="QWE-7H-v2l"/>
                     <navigationItem key="navigationItem" id="LZE-OU-yRF"/>
                     <connections>
                         <outlet property="buttonEight" destination="sLX-YO-V8c" id="XvC-7I-rin"/>
@@ -267,9 +325,9 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need a Chromecast on your network to start Spacedentist.tv" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-dS-VvM">
-                                <rect key="frame" x="24" y="252" width="552" height="96"/>
-                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="48"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="24" y="225" width="552" height="150"/>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="50"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -285,7 +343,7 @@
                             <constraint firstItem="qnD-Y7-rq7" firstAttribute="top" secondItem="tV3-tk-Y03" secondAttribute="topMargin" id="xPJ-0r-vby"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Disconnected" id="Dhc-e6-sXN"/>
+                    <tabBarItem key="tabBarItem" title="Disconnected" image="CastOff" id="Dhc-e6-sXN"/>
                     <connections>
                         <outlet property="text" destination="5rA-dS-VvM" id="Dth-YE-n3J"/>
                     </connections>
@@ -325,5 +383,8 @@
     <resources>
         <image name="Background" width="1104" height="736"/>
         <image name="CastOff" width="29" height="22"/>
+        <image name="CastOn" width="29" height="22"/>
+        <image name="Text" width="52" height="38"/>
+        <image name="TextPressed" width="52" height="38"/>
     </resources>
 </document>
