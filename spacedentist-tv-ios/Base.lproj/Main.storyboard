@@ -25,11 +25,11 @@
         <scene sceneID="qQF-i6-Tge">
             <objects>
                 <navigationController id="tpc-MS-Md9" customClass="SDNavigationController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hzr-7v-BWW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Hzr-7v-BWW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -49,7 +49,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="IGH-fx-bnq" customClass="UIImageViewAligned">
@@ -286,7 +286,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Connected" image="CastOn" id="QWE-7H-v2l"/>
-                    <navigationItem key="navigationItem" id="LZE-OU-yRF"/>
                     <connections>
                         <outlet property="buttonEight" destination="sLX-YO-V8c" id="XvC-7I-rin"/>
                         <outlet property="buttonFive" destination="Yj9-VK-Qwd" id="CKz-pu-7QI"/>
@@ -314,7 +313,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6kb-lB-O1C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tV3-tk-Y03">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="qnD-Y7-rq7" customClass="UIImageViewAligned">

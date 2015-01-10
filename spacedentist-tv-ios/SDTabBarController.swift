@@ -36,6 +36,13 @@ class SDTabBarConroller : UITabBarController,
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        if let font = UIFont(name: "BebasNeue", size: 21) {
+            let titleTextAttributes = NSMutableDictionary()
+            titleTextAttributes.setObject(font, forKey: NSFontAttributeName)
+            titleTextAttributes.setObject(UIColor(white: 0.933333, alpha: 1), forKey: NSForegroundColorAttributeName)
+            self.navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+        }
+        
         if let connectedController = self.viewControllers?[1] as? SDConnectedController {
             self.connectedControler = connectedController
             connectedController.delegate = self
@@ -82,8 +89,8 @@ class SDTabBarConroller : UITabBarController,
     
     @IBAction func castButtonPressed(button: AnyObject) {
         if let dm = self.deviceManager {
-            if  dm.isConnected {
-                NSLog("there's a device manager and it's connected!")
+            if  dm.isConnectedToApp {
+                NSLog("there's a device manager and it's connected to the app!")
                 self.disconnectSheet = SDDisconnectSheet(deviceName: dm.device.friendlyName, delegate: self)
                 self.disconnectSheet?.sheet.showFromBarButtonItem(self.buttonCast, animated: true)
             } else {
@@ -140,14 +147,20 @@ class SDTabBarConroller : UITabBarController,
     }
     
     func castOn() {
-        self.buttonCast?.image = UIImage(named: "CastOn")
         self.disconnectedController?.setConnecting(false)
+        
+        if let image = UIImage(named: "CastOn") {
+            self.buttonCast?.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        }
         self.selectedIndex = 1
     }
     
     func castOff() {
-        self.buttonCast?.image = UIImage(named: "CastOff")
         self.disconnectedController?.setConnecting(false)
+        
+        if let image = UIImage(named: "CastOff") {
+            self.buttonCast?.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        }
         self.selectedIndex = 0
     }
     

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2581EDD61A5B4E06004DF675 /* SDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581EDD51A5B4E06004DF675 /* SDNavigationController.swift */; };
 		258F39E81A55824400ED7D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39E71A55824400ED7D38 /* AppDelegate.swift */; };
 		258F39EA1A55824400ED7D38 /* SDConnectedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39E91A55824400ED7D38 /* SDConnectedController.swift */; };
 		258F39ED1A55824400ED7D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258F39EB1A55824400ED7D38 /* Main.storyboard */; };
@@ -34,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2581EDD51A5B4E06004DF675 /* SDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDNavigationController.swift; sourceTree = "<group>"; };
 		258F39E21A55824400ED7D38 /* spacedentist-tv-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spacedentist-tv-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		258F39E61A55824400ED7D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		258F39E71A55824400ED7D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				25D377CF1A59F1F100BE337C /* UIImageViewAligned.m */,
 				258F39E71A55824400ED7D38 /* AppDelegate.swift */,
 				25D377CA1A5952EA00BE337C /* SDTabBarController.swift */,
-				2581EDD51A5B4E06004DF675 /* SDNavigationController.swift */,
 				258F39E91A55824400ED7D38 /* SDConnectedController.swift */,
 				25D377CC1A59572700BE337C /* SDDisconnectedController.swift */,
 				25D377C51A588CCB00BE337C /* SDConnectSheet.swift */,
@@ -300,7 +297,6 @@
 				25D377CD1A59572700BE337C /* SDDisconnectedController.swift in Sources */,
 				258F39EA1A55824400ED7D38 /* SDConnectedController.swift in Sources */,
 				25D377CB1A5952EA00BE337C /* SDTabBarController.swift in Sources */,
-				2581EDD61A5B4E06004DF675 /* SDNavigationController.swift in Sources */,
 				25D377C71A58A0AE00BE337C /* SDConnectSheet.swift in Sources */,
 				258F3A091A55B0FE00ED7D38 /* SDCastChannel.swift in Sources */,
 				258F39E81A55824400ED7D38 /* AppDelegate.swift in Sources */,
