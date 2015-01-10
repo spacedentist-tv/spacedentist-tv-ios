@@ -15,7 +15,7 @@ class SDTabBarConroller : UITabBarController,
     SDDisconnectSheetDelegate,
     SDConnectedControllerDelegate {
     
-    let applicationId: String = "E7EFD798"
+    let applicationId: String = "CBEF7615"
     
     var connectedControler: SDConnectedController? = nil
     var disconnectedController: SDDisconnectedController? = nil
