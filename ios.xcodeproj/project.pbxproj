@@ -33,13 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		258F39E21A55824400ED7D38 /* spacedentist-tv-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spacedentist-tv-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		258F39E21A55824400ED7D38 /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		258F39E61A55824400ED7D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		258F39E71A55824400ED7D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		258F39E91A55824400ED7D38 /* SDConnectedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDConnectedController.swift; sourceTree = "<group>"; };
 		258F39EC1A55824400ED7D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		258F39EE1A55824400ED7D38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		258F39F71A55824500ED7D38 /* spacedentist-tv-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spacedentist-tv-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		258F39F71A55824500ED7D38 /* iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		258F39FC1A55824500ED7D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		258F39FD1A55824500ED7D38 /* spacedentist_tv_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacedentist_tv_iosTests.swift; sourceTree = "<group>"; };
 		258F3A071A55850200ED7D38 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 		258F39E31A55824400ED7D38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				258F39E21A55824400ED7D38 /* spacedentist-tv-ios.app */,
-				258F39F71A55824500ED7D38 /* spacedentist-tv-iosTests.xctest */,
+				258F39E21A55824400ED7D38 /* ios.app */,
+				258F39F71A55824500ED7D38 /* iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		258F39E11A55824400ED7D38 /* spacedentist-tv-ios */ = {
+		258F39E11A55824400ED7D38 /* ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 258F3A011A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist-tv-ios" */;
+			buildConfigurationList = 258F3A011A55824500ED7D38 /* Build configuration list for PBXNativeTarget "ios" */;
 			buildPhases = (
 				389724AA3B7D5F81487BA146 /* Check Pods Manifest.lock */,
 				258F39DE1A55824400ED7D38 /* Sources */,
@@ -175,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = "spacedentist-tv-ios";
+			name = ios;
 			productName = "spacedentist-tv-ios";
-			productReference = 258F39E21A55824400ED7D38 /* spacedentist-tv-ios.app */;
+			productReference = 258F39E21A55824400ED7D38 /* ios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		258F39F61A55824500ED7D38 /* spacedentist-tv-iosTests */ = {
+		258F39F61A55824500ED7D38 /* iosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 258F3A041A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist-tv-iosTests" */;
+			buildConfigurationList = 258F3A041A55824500ED7D38 /* Build configuration list for PBXNativeTarget "iosTests" */;
 			buildPhases = (
 				258F39F31A55824500ED7D38 /* Sources */,
 				258F39F41A55824500ED7D38 /* Frameworks */,
@@ -193,9 +193,9 @@
 			dependencies = (
 				258F39F91A55824500ED7D38 /* PBXTargetDependency */,
 			);
-			name = "spacedentist-tv-iosTests";
+			name = iosTests;
 			productName = "spacedentist-tv-iosTests";
-			productReference = 258F39F71A55824500ED7D38 /* spacedentist-tv-iosTests.xctest */;
+			productReference = 258F39F71A55824500ED7D38 /* iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 258F39DD1A55824400ED7D38 /* Build configuration list for PBXProject "spacedentist-tv-ios" */;
+			buildConfigurationList = 258F39DD1A55824400ED7D38 /* Build configuration list for PBXProject "ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,8 +229,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				258F39E11A55824400ED7D38 /* spacedentist-tv-ios */,
-				258F39F61A55824500ED7D38 /* spacedentist-tv-iosTests */,
+				258F39E11A55824400ED7D38 /* ios */,
+				258F39F61A55824500ED7D38 /* iosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		258F39F91A55824500ED7D38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 258F39E11A55824400ED7D38 /* spacedentist-tv-ios */;
+			target = 258F39E11A55824400ED7D38 /* ios */;
 			targetProxy = 258F39F81A55824500ED7D38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -421,7 +421,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "spacedentist-tv-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "spacedentist-tv-ios";
+				PRODUCT_NAME = ios;
 				SWIFT_OBJC_BRIDGING_HEADER = "spacedentist-tv-ios/Bridging.h";
 			};
 			name = Debug;
@@ -434,7 +434,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "spacedentist-tv-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "spacedentist-tv-ios";
+				PRODUCT_NAME = ios;
 				SWIFT_OBJC_BRIDGING_HEADER = "spacedentist-tv-ios/Bridging.h";
 			};
 			name = Release;
@@ -453,7 +453,7 @@
 				);
 				INFOPLIST_FILE = "spacedentist-tv-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "spacedentist-tv-iosTests";
+				PRODUCT_NAME = iosTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacedentist-tv-ios.app/spacedentist-tv-ios";
 			};
 			name = Debug;
@@ -468,7 +468,7 @@
 				);
 				INFOPLIST_FILE = "spacedentist-tv-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "spacedentist-tv-iosTests";
+				PRODUCT_NAME = iosTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacedentist-tv-ios.app/spacedentist-tv-ios";
 			};
 			name = Release;
@@ -476,7 +476,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		258F39DD1A55824400ED7D38 /* Build configuration list for PBXProject "spacedentist-tv-ios" */ = {
+		258F39DD1A55824400ED7D38 /* Build configuration list for PBXProject "ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				258F39FF1A55824500ED7D38 /* Debug */,
@@ -485,7 +485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		258F3A011A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist-tv-ios" */ = {
+		258F3A011A55824500ED7D38 /* Build configuration list for PBXNativeTarget "ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				258F3A021A55824500ED7D38 /* Debug */,
@@ -494,7 +494,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		258F3A041A55824500ED7D38 /* Build configuration list for PBXNativeTarget "spacedentist-tv-iosTests" */ = {
+		258F3A041A55824500ED7D38 /* Build configuration list for PBXNativeTarget "iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				258F3A051A55824500ED7D38 /* Debug */,
