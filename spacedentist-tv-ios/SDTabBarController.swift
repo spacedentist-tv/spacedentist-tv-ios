@@ -132,6 +132,9 @@ class SDTabBarConroller : UITabBarController,
     
     func deviceManager(deviceManager: GCKDeviceManager!, didDisconnectFromApplicationWithError error: NSError!) {
         castOff()
+        if let gckError = GCKErrorCode(rawValue: error.code) {
+            NSLog("Disconnected: \(GCKError.enumDescriptionForCode(gckError))")
+        }
     }
     
     func castOn() {
