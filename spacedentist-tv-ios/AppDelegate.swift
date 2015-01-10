@@ -16,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCKLoggerDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        TestFlight.takeOff("1a17cd49-8178-455e-9aae-4a26cfb90f99")
-        
         GCKLogger.sharedInstance().delegate = self
         
         return true

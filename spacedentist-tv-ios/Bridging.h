@@ -8,7 +8,6 @@
 
 #pragma once
 
-#include <TestFlightSDK/TestFlight.h>
 #include <google-cast-sdk/GoogleCast.h>
 
 #include "UIImageViewAligned.h"
