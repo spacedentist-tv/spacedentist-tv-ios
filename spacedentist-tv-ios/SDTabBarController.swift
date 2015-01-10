@@ -45,6 +45,7 @@ class SDTabBarConroller : UITabBarController,
         }
         
         // hide the cast icon
+        castOff()
         checkEnableCastButton(animated: false)
         
         self.deviceScanner = GCKDeviceScanner()
@@ -107,6 +108,7 @@ class SDTabBarConroller : UITabBarController,
         
         // animate the cast icon while connecting
         self.buttonCast?.image = UIImage.animatedImageNamed("CastOn", duration:1)
+        self.disconnectedController?.setConnecting(true)
     }
     
     func disconnectPressed() {
@@ -139,11 +141,13 @@ class SDTabBarConroller : UITabBarController,
     
     func castOn() {
         self.buttonCast?.image = UIImage(named: "CastOn")
+        self.disconnectedController?.setConnecting(false)
         self.selectedIndex = 1
     }
     
     func castOff() {
         self.buttonCast?.image = UIImage(named: "CastOff")
+        self.disconnectedController?.setConnecting(false)
         self.selectedIndex = 0
     }
     

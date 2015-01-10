@@ -330,14 +330,19 @@
                                 <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1UC-BC-zUP">
+                                <rect key="frame" x="281" y="281" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="5rA-dS-VvM" secondAttribute="centerY" id="8Dd-3k-82y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5rA-dS-VvM" secondAttribute="trailing" constant="8" id="M2h-UX-9bE"/>
                             <constraint firstItem="5rA-dS-VvM" firstAttribute="leading" secondItem="tV3-tk-Y03" secondAttribute="leadingMargin" constant="8" id="OAG-RD-jn2"/>
+                            <constraint firstAttribute="centerX" secondItem="1UC-BC-zUP" secondAttribute="centerX" id="Xm2-wp-vZG"/>
                             <constraint firstAttribute="trailing" secondItem="qnD-Y7-rq7" secondAttribute="trailing" id="blU-xX-jHZ"/>
                             <constraint firstItem="qnD-Y7-rq7" firstAttribute="leading" secondItem="tV3-tk-Y03" secondAttribute="leading" id="dKZ-WJ-f4i"/>
+                            <constraint firstAttribute="centerY" secondItem="1UC-BC-zUP" secondAttribute="centerY" id="img-jd-3tv"/>
                             <constraint firstAttribute="centerX" secondItem="5rA-dS-VvM" secondAttribute="centerX" id="qv5-be-U7w"/>
                             <constraint firstAttribute="bottomMargin" secondItem="qnD-Y7-rq7" secondAttribute="bottom" id="siC-Bm-n0f"/>
                             <constraint firstItem="qnD-Y7-rq7" firstAttribute="top" secondItem="tV3-tk-Y03" secondAttribute="topMargin" id="xPJ-0r-vby"/>
@@ -345,6 +350,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Disconnected" image="CastOff" id="Dhc-e6-sXN"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="1UC-BC-zUP" id="jGe-01-uMK"/>
                         <outlet property="text" destination="5rA-dS-VvM" id="Dth-YE-n3J"/>
                     </connections>
                 </viewController>

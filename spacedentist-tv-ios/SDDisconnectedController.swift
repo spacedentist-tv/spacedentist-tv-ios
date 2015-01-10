@@ -12,6 +12,11 @@ import Foundation
 class SDDisconnectedController : UIViewController {
     
     @IBOutlet var text: UILabel?
+    @IBOutlet var activityIndicator: UIActivityIndicatorView?
+    
+    override func viewDidLoad() {
+        self.activityIndicator?.hidden = true
+    }
     
     func setChromecastAvailable(available: Bool) {
         if let text = self.text {
@@ -21,4 +26,18 @@ class SDDisconnectedController : UIViewController {
         }
     }
     
+    func setConnecting(connecting: Bool) {
+        if let activityIndicator = self.activityIndicator {
+            activityIndicator.hidden = !connecting
+            if connecting {
+                activityIndicator.startAnimating()
+            } else {
+                activityIndicator.stopAnimating()
+            }
+        }
+        
+        if let text = self.text {
+            text.hidden = connecting
+        }
+    }
 }
