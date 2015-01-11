@@ -24,7 +24,7 @@
         <!--Navigation Controller-->
         <scene sceneID="qQF-i6-Tge">
             <objects>
-                <navigationController id="tpc-MS-Md9" customClass="SDNavigationController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="tpc-MS-Md9" customClass="SDNavigationController" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Hzr-7v-BWW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -43,7 +43,7 @@
         <!--Connected-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SDConnectedController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SDConnectedController" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -307,7 +307,7 @@
         <!--Disconnected-->
         <scene sceneID="CaT-Vj-aDM">
             <objects>
-                <viewController id="iPY-ha-CPs" customClass="SDDisconnectedController" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iPY-ha-CPs" customClass="SDDisconnectedController" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eYE-MK-Ulv"/>
                         <viewControllerLayoutGuide type="bottom" id="6kb-lB-O1C"/>
@@ -360,7 +360,7 @@
         <!--spacedentist.tv-->
         <scene sceneID="fbf-29-lWu">
             <objects>
-                <tabBarController id="QuG-8r-PUD" customClass="SDTabBarConroller" customModule="spacedentist_tv_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="QuG-8r-PUD" customClass="SDTabBarConroller" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="spacedentist.tv" id="aL1-l4-FZI">
                         <barButtonItem key="rightBarButtonItem" image="CastOff" id="j73-FF-vPZ">
                             <connections>

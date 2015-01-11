@@ -4,6 +4,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 workspace 'sdtv'
 
 platform :ios, '7.0'
-xcodeproj 'spacedentist-tv-ios.xcodeproj'
+xcodeproj 'ios.xcodeproj'
 
 pod 'google-cast-sdk', '2.5.1'

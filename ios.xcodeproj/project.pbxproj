@@ -454,7 +454,7 @@
 				INFOPLIST_FILE = "spacedentist-tv-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = iosTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacedentist-tv-ios.app/spacedentist-tv-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.app/ios";
 			};
 			name = Debug;
 		};
@@ -469,7 +469,7 @@
 				INFOPLIST_FILE = "spacedentist-tv-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = iosTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacedentist-tv-ios.app/spacedentist-tv-ios";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.app/ios";
 			};
 			name = Release;
 		};
