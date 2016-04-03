@@ -24,7 +24,7 @@
         <!--Navigation Controller-->
         <scene sceneID="qQF-i6-Tge">
             <objects>
-                <navigationController id="tpc-MS-Md9" customClass="SDNavigationController" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="tpc-MS-Md9" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Hzr-7v-BWW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -52,12 +52,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="IGH-fx-bnq" customClass="UIImageViewAligned">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="IGH-fx-bnq" customClass="UIImageViewAligned" customModule="UIImageViewAlignedSwift">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="alignTop" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="alignLeft" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-5W-hv1">
                                 <rect key="frame" x="172" y="338" width="80" height="60"/>
@@ -286,8 +282,9 @@
                             <constraint firstItem="lV3-Sc-hEZ" firstAttribute="leading" secondItem="sLX-YO-V8c" secondAttribute="trailing" constant="8" symbolic="YES" id="yHk-Qb-iN0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Connected" image="CastOn" id="QWE-7H-v2l"/>
+                    <tabBarItem key="tabBarItem" title="Connected" id="QWE-7H-v2l"/>
                     <connections>
+                        <outlet property="background" destination="IGH-fx-bnq" id="eW5-Ek-7an"/>
                         <outlet property="buttonEight" destination="sLX-YO-V8c" id="XvC-7I-rin"/>
                         <outlet property="buttonFive" destination="Yj9-VK-Qwd" id="CKz-pu-7QI"/>
                         <outlet property="buttonFour" destination="h0X-LJ-CY6" id="DkK-bF-9YM"/>
@@ -317,12 +314,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="qnD-Y7-rq7" customClass="UIImageViewAligned">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="qnD-Y7-rq7" customClass="UIImageViewAligned" customModule="UIImageViewAlignedSwift">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="alignTop" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="alignLeft" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need a Chromecast on your network to start Spacedentist.tv" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-dS-VvM">
                                 <rect key="frame" x="28" y="225" width="544" height="150"/>
@@ -348,9 +341,10 @@
                             <constraint firstItem="qnD-Y7-rq7" firstAttribute="top" secondItem="tV3-tk-Y03" secondAttribute="topMargin" id="xPJ-0r-vby"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Disconnected" image="CastOff" id="Dhc-e6-sXN"/>
+                    <tabBarItem key="tabBarItem" title="Disconnected" id="Dhc-e6-sXN"/>
                     <connections>
                         <outlet property="activityIndicator" destination="1UC-BC-zUP" id="jGe-01-uMK"/>
+                        <outlet property="background" destination="qnD-Y7-rq7" id="42K-IY-Yol"/>
                         <outlet property="text" destination="5rA-dS-VvM" id="Dth-YE-n3J"/>
                     </connections>
                 </viewController>
@@ -388,8 +382,6 @@
     </scenes>
     <resources>
         <image name="Background" width="1104" height="736"/>
-        <image name="CastOff" width="29" height="22"/>
-        <image name="CastOn" width="29" height="22"/>
         <image name="Text" width="52" height="38"/>
         <image name="TextPressed" width="52" height="38"/>
         <image name="cast_off" width="24" height="24"/>

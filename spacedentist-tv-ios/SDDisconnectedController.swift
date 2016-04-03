@@ -8,14 +8,20 @@
 
 import Foundation
 import UIKit
+import UIImageViewAlignedSwift
 
 class SDDisconnectedController : UIViewController {
     
     @IBOutlet var text: UILabel?
     @IBOutlet var activityIndicator: UIActivityIndicatorView?
+    @IBOutlet var background: UIImageViewAligned?
     
     override func viewDidLoad() {
         self.activityIndicator?.hidden = true
+        
+        if let bg = self.background {
+            bg.alignment = UIImageViewAlignmentMask.TopLeft
+        }
     }
     
     func setChromecastAvailable(available: Bool) {

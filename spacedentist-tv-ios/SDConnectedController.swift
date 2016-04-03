@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIImageViewAlignedSwift
 
 protocol SDConnectedControllerDelegate {
     func buttonPressed(key: String)
@@ -28,11 +29,16 @@ class SDConnectedController: UIViewController {
     @IBOutlet var buttonZero: UIButton?
     @IBOutlet var buttonText: UIButton?
     
+    @IBOutlet var background: UIImageViewAligned?
+    
     var buttonMap = [UIButton: String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if let bg = self.background {
+            bg.alignment = UIImageViewAlignmentMask.TopLeft
+        }
         
         self.buttonMap[self.buttonOne!] = "1"
         self.buttonMap[self.buttonTwo!] = "2"
