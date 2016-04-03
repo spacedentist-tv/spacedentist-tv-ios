@@ -129,6 +129,8 @@ class SDTabBarConroller : UITabBarController,
             )
         )
         
+        alertController.popoverPresentationController?.barButtonItem = self.buttonCast
+        
         self.presentViewController(alertController, animated: true, completion: nil)
     }
     
@@ -162,6 +164,8 @@ class SDTabBarConroller : UITabBarController,
                 }
             )
         )
+        
+        alertController.popoverPresentationController?.barButtonItem = self.buttonCast
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }
