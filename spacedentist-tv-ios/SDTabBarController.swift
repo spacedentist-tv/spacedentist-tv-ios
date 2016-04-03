@@ -112,7 +112,7 @@ class SDTabBarConroller : UITabBarController,
                         self.deviceManager!.connect()
                         
                         // animate the cast icon while connecting
-                        self.buttonCast?.image = UIImage.animatedImageNamed("CastOn", duration:1)
+                        self.buttonCast?.image = UIImage.animatedImageNamed("cast_on", duration:1)
                         self.disconnectedController?.setConnecting(true)
                     }
                 )
@@ -189,7 +189,7 @@ class SDTabBarConroller : UITabBarController,
     func castOn() {
         self.disconnectedController?.setConnecting(false)
         
-        if let image = UIImage(named: "CastOn") {
+        if let image = UIImage(named: "cast_on") {
             self.buttonCast?.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         }
         self.selectedIndex = 1
@@ -198,7 +198,7 @@ class SDTabBarConroller : UITabBarController,
     func castOff() {
         self.disconnectedController?.setConnecting(false)
         
-        if let image = UIImage(named: "CastOff") {
+        if let image = UIImage(named: "cast_off") {
             self.buttonCast?.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         }
         self.selectedIndex = 0

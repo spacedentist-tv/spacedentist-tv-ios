@@ -363,7 +363,7 @@
             <objects>
                 <tabBarController id="QuG-8r-PUD" customClass="SDTabBarConroller" customModule="ios" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="spacedentist.tv" id="aL1-l4-FZI">
-                        <barButtonItem key="rightBarButtonItem" image="CastOff" id="j73-FF-vPZ">
+                        <barButtonItem key="rightBarButtonItem" image="cast_off" id="j73-FF-vPZ">
                             <connections>
                                 <action selector="castButtonPressed:" destination="QuG-8r-PUD" id="52c-5x-N8M"/>
                             </connections>
@@ -392,5 +392,6 @@
         <image name="CastOn" width="29" height="22"/>
         <image name="Text" width="52" height="38"/>
         <image name="TextPressed" width="52" height="38"/>
+        <image name="cast_off" width="24" height="24"/>
     </resources>
 </document>
