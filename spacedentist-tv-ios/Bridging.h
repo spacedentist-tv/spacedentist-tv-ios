@@ -8,6 +8,4 @@
 
 #pragma once
 
-#include <google-cast-sdk/GoogleCast.h>
-
-#include "UIImageViewAligned.h"
+#include <GoogleCast/GoogleCast.h>

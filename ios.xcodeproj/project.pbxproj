@@ -14,12 +14,9 @@
 		258F39FE1A55824500ED7D38 /* spacedentist_tv_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F39FD1A55824500ED7D38 /* spacedentist_tv_iosTests.swift */; };
 		258F3A091A55B0FE00ED7D38 /* SDCastChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F3A081A55B0FE00ED7D38 /* SDCastChannel.swift */; };
 		25D377C41A58751B00BE337C /* BebasNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25D377C31A58751B00BE337C /* BebasNeue.ttf */; };
-		25D377C71A58A0AE00BE337C /* SDConnectSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D377C51A588CCB00BE337C /* SDConnectSheet.swift */; };
-		25D377C91A58A22400BE337C /* SDDisconnectSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D377C81A58A22400BE337C /* SDDisconnectSheet.swift */; };
 		25D377CB1A5952EA00BE337C /* SDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D377CA1A5952EA00BE337C /* SDTabBarController.swift */; };
 		25D377CD1A59572700BE337C /* SDDisconnectedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D377CC1A59572700BE337C /* SDDisconnectedController.swift */; };
-		25D377D01A59F1F100BE337C /* UIImageViewAligned.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D377CF1A59F1F100BE337C /* UIImageViewAligned.m */; };
-		6CA3194F15E33B6535D3178C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DEBDDEFCA20ECEA988625B /* libPods.a */; };
+		5EA1062E456A2F86E9D41C38 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8EDCEE7771A9479354E4F1 /* Pods_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,15 +42,14 @@
 		258F3A071A55850200ED7D38 /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
 		258F3A081A55B0FE00ED7D38 /* SDCastChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCastChannel.swift; sourceTree = "<group>"; };
 		25D377C31A58751B00BE337C /* BebasNeue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BebasNeue.ttf; path = Resources/BebasNeue.ttf; sourceTree = "<group>"; };
-		25D377C51A588CCB00BE337C /* SDConnectSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDConnectSheet.swift; sourceTree = "<group>"; };
-		25D377C81A58A22400BE337C /* SDDisconnectSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDisconnectSheet.swift; sourceTree = "<group>"; };
 		25D377CA1A5952EA00BE337C /* SDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDTabBarController.swift; sourceTree = "<group>"; };
 		25D377CC1A59572700BE337C /* SDDisconnectedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDisconnectedController.swift; sourceTree = "<group>"; };
-		25D377CE1A59F1F100BE337C /* UIImageViewAligned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageViewAligned.h; path = ImageAligned/UIImageViewAligned.h; sourceTree = "<group>"; };
-		25D377CF1A59F1F100BE337C /* UIImageViewAligned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageViewAligned.m; path = ImageAligned/UIImageViewAligned.m; sourceTree = "<group>"; };
+		4AEA549F2DCA2CCA5CF26F1C /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		868E545D8D51406184CD159A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8775A9FA26CC43B37017D456 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		941564F2A6F3BED4B0E37E73 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		E3DEBDDEFCA20ECEA988625B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8EDCEE7771A9479354E4F1 /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CA3194F15E33B6535D3178C /* libPods.a in Frameworks */,
+				5EA1062E456A2F86E9D41C38 /* Pods_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,14 +94,10 @@
 		258F39E41A55824400ED7D38 /* spacedentist-tv-ios */ = {
 			isa = PBXGroup;
 			children = (
-				25D377CE1A59F1F100BE337C /* UIImageViewAligned.h */,
-				25D377CF1A59F1F100BE337C /* UIImageViewAligned.m */,
 				258F39E71A55824400ED7D38 /* AppDelegate.swift */,
 				25D377CA1A5952EA00BE337C /* SDTabBarController.swift */,
 				258F39E91A55824400ED7D38 /* SDConnectedController.swift */,
 				25D377CC1A59572700BE337C /* SDDisconnectedController.swift */,
-				25D377C51A588CCB00BE337C /* SDConnectSheet.swift */,
-				25D377C81A58A22400BE337C /* SDDisconnectSheet.swift */,
 				258F3A081A55B0FE00ED7D38 /* SDCastChannel.swift */,
 				258F39EB1A55824400ED7D38 /* Main.storyboard */,
 				258F39EE1A55824400ED7D38 /* Images.xcassets */,
@@ -146,6 +138,8 @@
 			children = (
 				868E545D8D51406184CD159A /* Pods.debug.xcconfig */,
 				8775A9FA26CC43B37017D456 /* Pods.release.xcconfig */,
+				941564F2A6F3BED4B0E37E73 /* Pods-ios.debug.xcconfig */,
+				4AEA549F2DCA2CCA5CF26F1C /* Pods-ios.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -154,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E3DEBDDEFCA20ECEA988625B /* libPods.a */,
+				FE8EDCEE7771A9479354E4F1 /* Pods_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,11 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 258F3A011A55824500ED7D38 /* Build configuration list for PBXNativeTarget "ios" */;
 			buildPhases = (
-				389724AA3B7D5F81487BA146 /* Check Pods Manifest.lock */,
+				389724AA3B7D5F81487BA146 /* 📦 Check Pods Manifest.lock */,
 				258F39DE1A55824400ED7D38 /* Sources */,
 				258F39DF1A55824400ED7D38 /* Frameworks */,
 				258F39E01A55824400ED7D38 /* Resources */,
-				B7B8A758C7E73B0F83017B4B /* Copy Pods Resources */,
+				B7B8A758C7E73B0F83017B4B /* 📦 Copy Pods Resources */,
+				A9ABAF067241660495D744DE /* 📦 Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,11 +200,14 @@
 		258F39DA1A55824400ED7D38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Michael Coffey";
 				TargetAttributes = {
 					258F39E11A55824400ED7D38 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6EY6AB6426;
 					};
 					258F39F61A55824500ED7D38 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -256,14 +255,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		389724AA3B7D5F81487BA146 /* Check Pods Manifest.lock */ = {
+		389724AA3B7D5F81487BA146 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,19 +270,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B7B8A758C7E73B0F83017B4B /* Copy Pods Resources */ = {
+		A9ABAF067241660495D744DE /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B8A758C7E73B0F83017B4B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -293,14 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D377C91A58A22400BE337C /* SDDisconnectSheet.swift in Sources */,
 				25D377CD1A59572700BE337C /* SDDisconnectedController.swift in Sources */,
 				258F39EA1A55824400ED7D38 /* SDConnectedController.swift in Sources */,
 				25D377CB1A5952EA00BE337C /* SDTabBarController.swift in Sources */,
-				25D377C71A58A0AE00BE337C /* SDConnectSheet.swift in Sources */,
 				258F3A091A55B0FE00ED7D38 /* SDCastChannel.swift in Sources */,
 				258F39E81A55824400ED7D38 /* AppDelegate.swift in Sources */,
-				25D377D01A59F1F100BE337C /* UIImageViewAligned.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,12 +379,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -405,36 +415,39 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		258F3A021A55824500ED7D38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 868E545D8D51406184CD159A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 941564F2A6F3BED4B0E37E73 /* Pods-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "spacedentist-tv-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ios;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "spacedentist-tv-ios/Bridging.h";
 			};
 			name = Debug;
 		};
 		258F3A031A55824500ED7D38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8775A9FA26CC43B37017D456 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 4AEA549F2DCA2CCA5CF26F1C /* Pods-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "spacedentist-tv-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ios;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "spacedentist-tv-ios/Bridging.h";
 			};
 			name = Release;
@@ -443,10 +456,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -462,10 +471,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = "spacedentist-tv-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = iosTests;

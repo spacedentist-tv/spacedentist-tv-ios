@@ -6,13 +6,11 @@
 //  Copyright (c) 2015 Michael Coffey. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class SDTabBarConroller : UITabBarController,
     GCKDeviceScannerListener,
     GCKDeviceManagerDelegate,
-    SDConnectSheetDelegate,
-    SDDisconnectSheetDelegate,
     SDConnectedControllerDelegate {
     
     let applicationId: String = "CBEF7615"
@@ -20,13 +18,18 @@ class SDTabBarConroller : UITabBarController,
     var connectedControler: SDConnectedController? = nil
     var disconnectedController: SDDisconnectedController? = nil
     
-    var deviceScanner: GCKDeviceScanner? = nil
-    var filterCriteria: GCKFilterCriteria? = nil
+    lazy private var deviceScanner: GCKDeviceScanner = {
+        let deviceScanner = GCKDeviceScanner(
+            filterCriteria: GCKFilterCriteria(
+                forAvailableApplicationWithID: self.applicationId
+            )
+        )
+        deviceScanner.addListener(self)
+        return deviceScanner
+    }()
+    
     var deviceManager: GCKDeviceManager? = nil
     var castChannel: GCKCastChannel? = nil
-    
-    var connectSheet: SDConnectSheet? = nil
-    var disconnectSheet: SDDisconnectSheet? = nil
     
     @IBOutlet var buttonCast: UIBarButtonItem?
     
@@ -37,10 +40,10 @@ class SDTabBarConroller : UITabBarController,
         // Do any additional setup after loading the view, typically from a nib.
         
         if let font = UIFont(name: "BebasNeue", size: 21) {
-            let titleTextAttributes = NSMutableDictionary()
-            titleTextAttributes.setObject(font, forKey: NSFontAttributeName)
-            titleTextAttributes.setObject(UIColor(white: 0.933333, alpha: 1), forKey: NSForegroundColorAttributeName)
-            self.navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+            var titleTextAttributes = [String: AnyObject]()
+            titleTextAttributes[NSFontAttributeName] = font
+            titleTextAttributes[NSForegroundColorAttributeName] = UIColor(white: 0.933333, alpha: 1)
+            self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
         }
         
         if let connectedController = self.viewControllers?[1] as? SDConnectedController {
@@ -53,13 +56,9 @@ class SDTabBarConroller : UITabBarController,
         
         // hide the cast icon
         castOff()
-        checkEnableCastButton(animated: false)
+        checkEnableCastButton(false)
         
-        self.deviceScanner = GCKDeviceScanner()
-        self.filterCriteria = GCKFilterCriteria(forAvailableApplicationWithID: self.applicationId)
-        self.deviceScanner?.filterCriteria = filterCriteria
-        self.deviceScanner?.addListener(self)
-        self.deviceScanner?.startScan()
+        self.deviceScanner.startScan()
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,14 +67,8 @@ class SDTabBarConroller : UITabBarController,
     }
     
     func checkEnableCastButton(animated: Bool = true) {
-        var available: Bool = false
-        
-        if let ds = self.deviceScanner {
-            available = deviceScanner!.hasDiscoveredDevices
-        }
-        
+        let available = self.deviceScanner.hasDiscoveredDevices
         self.navigationItem.setRightBarButtonItem(available ? self.buttonCast : nil, animated: animated)
-        
         self.disconnectedController?.setChromecastAvailable(available)
     }
     
@@ -88,42 +81,89 @@ class SDTabBarConroller : UITabBarController,
     }
     
     @IBAction func castButtonPressed(button: AnyObject) {
-        if let dm = self.deviceManager {
-            if  dm.isConnectedToApp {
-                NSLog("there's a device manager and it's connected to the app!")
-                self.disconnectSheet = SDDisconnectSheet(deviceName: dm.device.friendlyName, delegate: self)
-                self.disconnectSheet?.sheet.showFromBarButtonItem(self.buttonCast, animated: true)
-            } else {
-                // there was a device manager, but it wasn't connected
-                self.connectSheet = SDConnectSheet(deviceScanner: self.deviceScanner!, delegate: self)
-                self.connectSheet?.sheet?.showFromBarButtonItem(self.buttonCast, animated: true)
-            }
+        if self.deviceManager?.applicationConnectionState == GCKConnectionState.Connected {
+            showDisconect()
         } else {
-            // there's no device manager
-            self.connectSheet = SDConnectSheet(deviceScanner: self.deviceScanner!, delegate: self)
-            self.connectSheet?.sheet?.showFromBarButtonItem(self.buttonCast, animated: true)
+            showConnect()
         }
     }
     
-    func deviceSelected(device: GCKDevice) {
-        NSLog("device selected \(device.friendlyName)")
+    func showConnect() {
+        let alertController = UIAlertController(
+            title: "Connect to device",
+            message: nil,
+            preferredStyle: UIAlertControllerStyle.ActionSheet
+        )
         
-        self.deviceManager = GCKDeviceManager(device: device, clientPackageName: NSBundle.mainBundle().bundleIdentifier)
+        for device in self.deviceScanner.devices {
+            alertController.addAction(
+                UIAlertAction(
+                    title: device.friendlyName,
+                    style: UIAlertActionStyle.Default,
+                    handler: { action in
+                        NSLog("device selected \(device.friendlyName)")
+                        
+                        self.deviceManager = GCKDeviceManager(
+                            device: device as! GCKDevice,
+                            clientPackageName: NSBundle.mainBundle().bundleIdentifier
+                        )
+                        
+                        self.deviceManager!.delegate = self
+                        self.deviceManager!.connect()
+                        
+                        // animate the cast icon while connecting
+                        self.buttonCast?.image = UIImage.animatedImageNamed("CastOn", duration:1)
+                        self.disconnectedController?.setConnecting(true)
+                    }
+                )
+            )
+        }
         
-        self.deviceManager?.delegate = self
-        self.deviceManager?.connect()
+        alertController.addAction(
+            UIAlertAction(
+                title: "Cancel",
+                style: UIAlertActionStyle.Cancel,
+                handler: { action in
+                    // do nothing when they click cancel
+                }
+            )
+        )
         
-        // animate the cast icon while connecting
-        self.buttonCast?.image = UIImage.animatedImageNamed("CastOn", duration:1)
-        self.disconnectedController?.setConnecting(true)
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
-    func disconnectPressed() {
-        NSLog("disconnect pressed")
+    func showDisconect() {
+        let alertController = UIAlertController(
+            title: "Disconnect from \(self.deviceManager!.device.friendlyName)",
+            message: nil,
+            preferredStyle: UIAlertControllerStyle.ActionSheet
+        )
         
-        self.deviceManager?.stopApplication()
-        self.deviceManager?.disconnect()
-        castOff()
+        alertController.addAction(
+            UIAlertAction(
+                title: "Disconnect",
+                style: UIAlertActionStyle.Destructive,
+                handler: { action in
+                    NSLog("disconnect pressed")
+                    
+                    self.deviceManager?.stopApplication()
+                    self.deviceManager?.disconnect()
+                    self.castOff()
+                }
+            )
+        )
+        
+        alertController.addAction(
+            UIAlertAction(
+                title: "Cancel",
+                style: UIAlertActionStyle.Cancel,
+                handler: { action in
+                    // do nothing when they click cancel
+                }
+            )
+        )
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     func deviceManagerDidConnect(deviceManager: GCKDeviceManager!) {
@@ -132,7 +172,7 @@ class SDTabBarConroller : UITabBarController,
     }
     
     func deviceManager(deviceManager: GCKDeviceManager!, didConnectToCastApplication applicationMetadata: GCKApplicationMetadata!, sessionID: String!, launchedApplication: Bool) {
-        // the app has launched to turn the cast icon on
+        // the app has launched so turn the cast icon on
         castOn()
         
         self.castChannel = SDCastChannel()
@@ -166,15 +206,22 @@ class SDTabBarConroller : UITabBarController,
     
     // SDConnectedControllerDelegate
     func buttonPressed(key: String) {
-        if let cc = self.castChannel? {
+        if let cc = self.castChannel {
             let dictionary: NSMutableDictionary = NSMutableDictionary()
             dictionary.setValue("rc", forKey: "sdtv_msg")
             dictionary.setValue(key, forKey: "key")
             
-            var error: NSErrorPointer = nil
-            
-            if let data = NSJSONSerialization.dataWithJSONObject(dictionary, options: NSJSONWritingOptions.PrettyPrinted, error: error) {
-                cc.sendTextMessage(NSString(data: data, encoding: NSUTF8StringEncoding));
+            do {
+                let data = try NSJSONSerialization.dataWithJSONObject(
+                    dictionary,
+                    options: NSJSONWritingOptions.PrettyPrinted
+                )
+                
+                if let textMessage = NSString(data: data, encoding: NSUTF8StringEncoding) as? String {
+                    cc.sendTextMessage(textMessage);
+                }
+            } catch {
+                NSLog("there was an error creating the JSON to send to the cast channel")
             }
         }
     }

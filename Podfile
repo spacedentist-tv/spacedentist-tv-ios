@@ -1,9 +1,13 @@
 source 'https://github.com/TouchType/iOS-Podspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
 
 workspace 'sdtv'
 
-platform :ios, '7.0'
-xcodeproj 'ios.xcodeproj'
+platform :ios, :deployment_target => '8.0'
+project 'ios.xcodeproj'
 
-pod 'google-cast-sdk', '2.5.1'
+target 'ios' do
+    pod 'google-cast-sdk', '2.10.4'
+    pod 'UIImageViewAlignedSwift', '0.1.11'
+end

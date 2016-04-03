@@ -11,7 +11,7 @@ import Foundation
 class SDCastChannel : GCKCastChannel {
     let namespace: String = "urn:x-cast:tv.spacedentist.cast"
     
-    override init() {
+    init() {
         super.init(namespace: self.namespace)
     }
     

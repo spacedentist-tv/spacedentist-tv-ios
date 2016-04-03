@@ -1,10 +1,20 @@
 PODS:
-  - google-cast-sdk (2.5.1)
+  - google-cast-sdk (2.10.4):
+    - google-cast-sdk/Assets (= 2.10.4)
+    - google-cast-sdk/Core (= 2.10.4)
+  - google-cast-sdk/Assets (2.10.4):
+    - google-cast-sdk/Core
+  - google-cast-sdk/Core (2.10.4)
+  - UIImageViewAlignedSwift (0.1.11)
 
 DEPENDENCIES:
-  - google-cast-sdk (= 2.5.1)
+  - google-cast-sdk (= 2.10.4)
+  - UIImageViewAlignedSwift (= 0.1.11)
 
 SPEC CHECKSUMS:
-  google-cast-sdk: 140236c945742c883d5b2658ffe5d683709e7781
+  google-cast-sdk: eb83ef6b875969e765011c457b254539c0978792
+  UIImageViewAlignedSwift: 3f2739bb8d5cda0ce0b45630efd3e94dae3bbc28
 
-COCOAPODS: 0.34.1
+PODFILE CHECKSUM: 1b2b1e09e6c647706754404e9f4a280b20048b60
+
+COCOAPODS: 1.0.0.beta.6

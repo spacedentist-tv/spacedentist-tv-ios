@@ -48,7 +48,7 @@ class SDConnectedController: UIViewController {
     }
     
     @IBAction func buttonTapped(button: UIButton) {
-        if let safeDelegate = self.delegate? {
+        if let safeDelegate = self.delegate {
             if let key = buttonMap[button] {
                 NSLog("button tapped! \(key)")
                 safeDelegate.buttonPressed(key);
